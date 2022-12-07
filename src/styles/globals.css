@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import url("https://api.fontshare.com/v2/css?f%5B%5D=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-satoshi;
+}
+
+body {
+  @apply bg-dark text-white;
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1860px] px-[60px] mx-auto;
+  }
+}
+
+/* Connect Wallet Button Styles ---Start--- */
+.connect_wallet_gradient_text {
+  background: linear-gradient(#10101b, #10101b) padding-box,
+    linear-gradient(87.41deg, #9a5beb 0%, #f352d2 52.08%, #f8c93a 100%)
+      border-box;
+  border: 2px solid transparent;
+  box-shadow: 0px 4px 10px 0px #f458cb66;
+
+  box-shadow: 16px 10px 24px 0px #f8bf4733;
+}
+.connect_wallet_gradient_text:hover {
+  background: linear-gradient(
+        87.41deg,
+        #9a5beb 0%,
+        #f352d2 52.08%,
+        #f8c93a 100%
+      )
+      padding-box,
+    linear-gradient(87.41deg, #9a5beb 0%, #f352d2 52.08%, #f8c93a 100%)
+      border-box;
+}
+.connect_wallet_gradient_text:hover span {
+  color: white !important;
+}
+.connect_wallet_gradient_text span {
+  background: linear-gradient(
+      87.41deg,
+      #9a5beb 0%,
+      #f352d2 52.08%,
+      #f8c93a 100%
+    ),
+    #ffffff;
+  background-clip: text;
+  color: transparent;
+}
+/* Connect Wallet Button Styles ---End--- */
+
+.__lets_go_btn {
+  background: linear-gradient(
+      87.41deg,
+      #1624ee 0%,
+      #f352d2 48.44%,
+      #f8c93a 100%
+    ),
+    #ffffff;
+  box-shadow: 16px 10px 24px rgba(248, 191, 71, 0.2),
+    0px 4px 10px rgba(244, 88, 203, 0.4), -10px 7px 13px rgba(41, 41, 236, 0.5),
+    inset 0px -4px 4px rgba(255, 255, 255, 0.25),
+    inset 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Styles ---Start--- */
+@layer components {
+  .__card {
+    @apply p-[60px] aspect-square rounded-[40px] overflow-hidden bg-contain flex flex-col relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+      inset 0px 0px 40px rgba(255, 255, 255, 0.3);
+  }
+  .__card_title_md {
+    @apply text-[65px] leading-[65px] tracking-[-0.02em] text-[#F2F4FF] font-black;
+  }
+  .__card_title_lg {
+    @apply text-[144px] leading-[132px] tracking-[-0.04em] text-[#F2F4FF] font-black;
+  }
+  .__card_title_xl {
+    @apply text-[185px] leading-[132px] tracking-[-0.04em] text-[#F2F4FF] font-black;
+  }
+  .__card_body_text {
+    @apply text-[20px] leading-[30px] text-[#F2F4FF] font-normal max-w-[500px] mt-[30px];
+  }
+  .__card_share_btn {
+    @apply px-[50px] py-3 rounded-full border-2 border-white text-white mt-10 font-bold hover:bg-white hover:text-black duration-200;
+  }
+}
+
+.__card::before {
+  content: "";
+  @apply absolute inset-0 z-[99] border-[3px] border-white/20 rounded-[40px] pointer-events-none;
+}
+/* Card Styles ---End--- */
+
+.tiger_nft_gradient_text {
+  background: linear-gradient(
+      87.41deg,
+      #9a5beb 0%,
+      #f352d2 52.08%,
+      #f8c93a 100%
+    ),
+    #ffffff;
+  background-clip: text;
+  color: transparent;
+}
