@@ -3,7 +3,7 @@ import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 const socialLinks = [
   {
-    icon: <FaDiscord size={18} />,
+    icon: <FaDiscord size={19} />,
     url: "#",
   },
   {
