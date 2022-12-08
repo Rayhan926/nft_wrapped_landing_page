@@ -27,36 +27,16 @@ body {
 
 /* Connect Wallet Button Styles ---Start--- */
 .connect_wallet_gradient_text {
-  background: linear-gradient(#10101b, #10101b) padding-box,
-    linear-gradient(87.41deg, #9a5beb 0%, #f352d2 52.08%, #f8c93a 100%)
-      border-box;
-  border: 2px solid transparent;
-  box-shadow: 0px 4px 10px 0px #f458cb66;
-
-  box-shadow: 16px 10px 24px 0px #f8bf4733;
+  background: #ffffff;
+  box-shadow: 16px 10px 24px rgba(248, 191, 71, 0.2),
+    0px 4px 10px rgba(244, 88, 203, 0.4), -10px 7px 13px rgba(41, 41, 236, 0.5),
+    inset 0px -4px 4px rgba(255, 255, 255, 0.25);
 }
-.connect_wallet_gradient_text:hover {
-  background: linear-gradient(
-        87.41deg,
-        #9a5beb 0%,
-        #f352d2 52.08%,
-        #f8c93a 100%
-      )
-      padding-box,
-    linear-gradient(87.41deg, #9a5beb 0%, #f352d2 52.08%, #f8c93a 100%)
-      border-box;
-}
-.connect_wallet_gradient_text:hover span {
+/* .connect_wallet_gradient_text:hover span {
   color: white !important;
-}
+} */
 .connect_wallet_gradient_text span {
-  background: linear-gradient(
-      87.41deg,
-      #9a5beb 0%,
-      #f352d2 52.08%,
-      #f8c93a 100%
-    ),
-    #ffffff;
+  background: linear-gradient(89.8deg, #332aeb -18.69%, #f5888e 115.33%);
   background-clip: text;
   color: transparent;
 }
@@ -123,7 +103,7 @@ body {
   color: transparent;
 }
 .__price_card {
-  @apply bg-contain bg-bottom bg-no-repeat shadow flex flex-col items-center text-center min-h-[620px] max-w-[480px] rounded-[40px] py-[50px] px-[43px] overflow-hidden relative;
+  @apply bg-contain bg-bottom bg-no-repeat shadow flex flex-col items-center text-center min-h-[620px] max-w-[480px] min-w-[480px] rounded-[40px] py-[50px] px-[43px] overflow-hidden relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     inset 0px 0px 40px rgba(255, 255, 255, 0.3);
 }

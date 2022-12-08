@@ -1,4 +1,5 @@
 import HeaderMobile from "@components/HeaderMobile";
+import MintYourWrappedButton from "@components/MintYourWrappedButton";
 import SiteLogo from "@components/SiteLogo";
 import SocialIcons from "@components/SocialIcons";
 import { navLinks } from "@config/constants";
@@ -28,11 +29,7 @@ const Header = () => {
         <div className="gap-7 hidden lg:flex lg:justify-center">
           <SocialIcons />
 
-          {/** Connect Wallet Button --Start-- */}
-          <button className="h-[46px] rounded-full flex items-center px-[50px] connect_wallet_gradient_text justify-center">
-            <span>Connect Wallet</span>
-          </button>
-          {/** Connect Wallet Button --End-- */}
+          <MintYourWrappedButton />
         </div>
 
         <HeaderMobile />

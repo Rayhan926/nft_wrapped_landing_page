@@ -1,5 +1,6 @@
-import LeaderBoardPassCard from "@components/LeaderBoardPassCard";
+import LeaderboardPassTransparentCard from "@components/LeaderboardPassTransparentCard";
 import MintYourWrappedCard from "@components/MintYourWrappedCard";
+import WrappedNFTAndLeaderboardPassBundleCard from "@components/WrappedNFTAndLeaderboardPassBundleCard";
 import React from "react";
 
 const LeaderboardAccessSection = () => {
@@ -15,9 +16,12 @@ const LeaderboardAccessSection = () => {
           </span>
         </h2>
 
-        <div className="mt-[60px] flex-col lg:flex-row items-center flex justify-center gap-5">
+        <div className="mt-[60px] flex-wrap flex-row items-center flex justify-center gap-5">
+          <WrappedNFTAndLeaderboardPassBundleCard />
+
           <MintYourWrappedCard />
-          <LeaderBoardPassCard />
+          {/* <LeaderBoardPassCard /> */}
+          <LeaderboardPassTransparentCard />
         </div>
       </div>
     </section>

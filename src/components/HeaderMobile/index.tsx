@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { use100vh } from "react-div-100vh";
+import MintYourWrappedButton from "@components/MintYourWrappedButton";
 
 const HeaderMobile = () => {
   const height = use100vh();
@@ -81,9 +82,7 @@ const Menus = () => {
 
       <div className="mt-auto space-y-6 px-7">
         <SocialIcons />
-        <button className="h-[46px] rounded-full flex items-center px-[50px] connect_wallet_gradient_text justify-center w-full">
-          <span>Connect Wallet</span>
-        </button>
+        <MintYourWrappedButton className="w-full" />
       </div>
     </nav>
   );
