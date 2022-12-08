@@ -7,7 +7,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="px-5 pt-[30px] lg:px-[50px] lg:pt-[38px] absolute top-0 left-0 w-full z-[9999]">
+    <header className="px-5 pr-4 pt-[30px] lg:px-[50px] lg:pt-[38px] absolute top-0 left-0 w-full z-[9999]">
       <div className="flex justify-between lg:grid lg:grid-cols-3 items-center">
         <div className="max-w-[190px] lg:max-w-[290px]">
           <SiteLogo />

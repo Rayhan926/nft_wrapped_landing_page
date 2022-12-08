@@ -5,6 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-position-70 {
+    background-position: 0 73%;
+  }
+}
+
 * {
   @apply font-satoshi;
 }

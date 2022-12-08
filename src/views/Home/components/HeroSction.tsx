@@ -11,11 +11,11 @@ const HeroSction = () => {
         width={1713 * 2}
         height={1552 * 2}
         src="/img/hero-bg.png"
-        className="w-full hidden lg:block"
+        className="w-full hidden md:block"
         alt="hero-bg"
       />
 
-      <div className="lg:absolute container inset-0 flex flex-col items-center pt-[140px] bg-[url('/img/hero_mobile_bg.svg')] bg-bottom pb-[550px] lg:pb-0 lg:bg-[url('/')] bg-cover bg-no-repeat">
+      <div className="md:absolute container inset-0 flex flex-col items-center pt-[140px] bg-[url('/img/hero_mobile_bg.svg')] bg-bottom sm:bg-position-70 pb-[550px] md:pb-0 md:bg-[url('/')] bg-cover bg-no-repeat">
         <h1 className="max-w-[920px] text-center text-[72px] leading-[72px] lg:text-[144px] lg:leading-[132px] tracking-[-0.04em] font-[900]">
           Your 2022 NFT Wrapped
         </h1>
