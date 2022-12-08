@@ -1,12 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Header from "@components/Header";
+import Image from "next/image";
 import React from "react";
 
 const HeroSction = () => {
   return (
     <section className="relative">
       <Header />
-      <img
+      <Image
+        width={1713 * 2}
+        height={1552 * 2}
         src="/img/hero-bg.png"
         className="w-full hidden lg:block"
         alt="hero-bg"
@@ -26,11 +29,6 @@ const HeroSction = () => {
           Let&apos;s go!
         </button>
       </div>
-      {/* <img
-        src="/img/hero_mobile_bg.svg"
-        alt="hero_mobile_bg"
-        className="w-full"
-      /> */}
     </section>
   );
 };

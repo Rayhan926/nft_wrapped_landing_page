@@ -4,14 +4,12 @@ const LeaderBoardPassCard = () => {
   return (
     <div className="__price_card bg-[url('/img/leaderboard_pass_bg.svg')] bg-[#F6F6F6]">
       <h3
-        style={
-          {
-            background:
-              "linear-gradient(87.41deg, #9A5BEB 0%, #F352D2 100%), #FFFFFF",
-            backgroundClip: "text",
-            "-webkit-background-clip": "text",
-          } as any
-        }
+        style={{
+          background:
+            "linear-gradient(87.41deg, #9A5BEB 0%, #F352D2 100%), #FFFFFF",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+        }}
         className="__price_card_title text-transparent"
       >
         Leaderboard Pass

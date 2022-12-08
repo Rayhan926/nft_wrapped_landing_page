@@ -29,7 +29,7 @@ const Header = () => {
           <SocialIcons />
 
           {/** Connect Wallet Button --Start-- */}
-          <button className="h-[46px] rounded-full flex items-center px-[50px] connect_wallet_gradient_text">
+          <button className="h-[46px] rounded-full flex items-center px-[50px] connect_wallet_gradient_text justify-center">
             <span>Connect Wallet</span>
           </button>
           {/** Connect Wallet Button --End-- */}

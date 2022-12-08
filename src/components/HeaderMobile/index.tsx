@@ -2,10 +2,12 @@ import SiteLogo from "@components/SiteLogo";
 import SocialIcons from "@components/SocialIcons";
 import { navLinks } from "@config/constants";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { use100vh } from "react-div-100vh";
 
 const HeaderMobile = () => {
+  const height = use100vh();
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false);
 
   const overlayClickHandler = (e: any) => {
@@ -13,6 +15,14 @@ const HeaderMobile = () => {
       setIsOpenMobileMenu(false);
     }
   };
+
+  useEffect(() => {
+    if (isOpenMobileMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [isOpenMobileMenu]);
 
   return (
     <div className="lg:hidden">
@@ -30,7 +40,8 @@ const HeaderMobile = () => {
       <div
         onClick={overlayClickHandler}
         id="mobileMenuOverlay"
-        className={`fixed top-0 left-0 w-full h-screen bg-black/50 z-[9999999] duration-100 ${
+        style={{ height: height || "100vh" }}
+        className={`fixed top-0 left-0 w-full bg-black/50 z-[9999999] duration-100 ${
           isOpenMobileMenu
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none delay-300"
@@ -70,7 +81,7 @@ const Menus = () => {
 
       <div className="mt-auto space-y-6 px-7">
         <SocialIcons />
-        <button className="h-[46px] w-full rounded-full flex items-center px-[50px] connect_wallet_gradient_text">
+        <button className="h-[46px] rounded-full flex items-center px-[50px] connect_wallet_gradient_text justify-center w-full">
           <span>Connect Wallet</span>
         </button>
       </div>
