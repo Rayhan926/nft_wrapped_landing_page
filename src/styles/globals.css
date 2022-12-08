@@ -10,7 +10,7 @@
 }
 
 body {
-  @apply bg-dark text-white bg-[url('/img/footer_bg.png')] bg-bottom bg-contain bg-no-repeat;
+  @apply bg-dark text-white bg-[url('/img/footer_bg_mobile.png')] md:bg-[url('/img/footer_bg.png')] bg-bottom bg-contain bg-no-repeat;
 }
 
 @layer components {
@@ -78,27 +78,28 @@ body {
       inset 0px 0px 40px rgba(255, 255, 255, 0.3);
   }
   .__card_title_sm {
-    @apply text-lg md:text-xl xl:text-[32px] font-bold mt-2 relative z-[2];
+    @apply text-[18px] leading-[24px] md:text-xl xl:text-[32px] font-bold mt-2 relative z-[2];
   }
   .__card_title_md {
     @apply text-[48px] leading-[48px] md:text-[36px] md:leading-[36px] lg:text-[50px] lg:leading-[50px] xl:text-[65px] xl:leading-[65px] tracking-[-0.02em] text-[#F2F4FF] font-black;
   }
   .__card_title_lg {
-    @apply text-[88px] leading-[90px] lg:text-[130px] lg:leading-[132px] tracking-[-0.04em] text-[#F2F4FF] font-black;
+    @apply text-[80px] leading-[90px] lg:text-[130px] lg:leading-[132px] tracking-[-0.04em] text-[#F2F4FF] font-black;
   }
   .__card_title_xl {
-    @apply text-[75px] md:text-[100px] leading-[70px] lg:text-[140px] lg:leading-[90px] 2xl:text-[185px] 2xl:leading-[132px] tracking-[-0.04em] text-[#F2F4FF] font-black;
+    @apply text-[80px] md:text-[100px] leading-[70px] lg:text-[140px] lg:leading-[90px] 2xl:text-[185px] 2xl:leading-[132px] tracking-[-0.04em] text-[#F2F4FF] font-black;
   }
   .__card_body_text {
-    @apply text-lg lg:text-[20px] xl:text-2xl lg:leading-[30px] text-[#F2F4FF] font-normal max-w-[500px] mt-5 xl:mt-[30px];
+    @apply text-[18px] leading-[24px] lg:text-[20px] xl:text-2xl lg:leading-[30px] text-[#F2F4FF] font-normal max-w-[500px] mt-5 xl:mt-[30px];
   }
   .__card_share_btn {
-    @apply px-[50px] py-3 rounded-full border-2 border-white text-white mt-6 xl:mt-10 font-bold hover:bg-white hover:text-black duration-200;
+    @apply px-[50px] py-3 rounded-full border-2 border-white text-white mt-[30px] xl:mt-10 font-bold hover:bg-white hover:text-black duration-200;
   }
 }
 
 .__card::before,
-.__price_card::before {
+.__price_card::before,
+.__footer_top::before {
   content: "";
   @apply absolute inset-0 z-[99] border-[3px] border-white/20 rounded-[40px] pointer-events-none;
 }
@@ -116,22 +117,22 @@ body {
   color: transparent;
 }
 .__price_card {
-  @apply bg-contain bg-no-repeat shadow flex flex-col items-center text-center h-[620px] max-w-[480px] rounded-[40px] py-[50px] px-[43px] overflow-hidden relative;
+  @apply bg-contain bg-bottom bg-no-repeat shadow flex flex-col items-center text-center min-h-[620px] max-w-[480px] rounded-[40px] py-[50px] px-[43px] overflow-hidden relative;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     inset 0px 0px 40px rgba(255, 255, 255, 0.3);
 }
 .__price_card_title {
-  @apply text-center font-black text-[54px] leading-[60px] tracking-[-0.02em];
+  @apply text-center font-black text-[48px] leading-[48px] xl:text-[54px] xl:leading-[60px] tracking-[-0.02em];
 }
 .__price_card_subtitle {
-  @apply text-[96px] font-black leading-[200px] tracking-[-0.04em];
+  @apply text-[72px] xl:text-[96px] font-black mt-10 xl:mt-0 tracking-[-0.04em];
 }
 .__price_card_body_text {
-  @apply text-2xl  mt-9 text-center max-w-[80%] mx-auto;
+  @apply text-[18px] leading-[24px] xl:text-2xl mt-[60px] xl:mt-9 text-center max-w-[80%] mx-auto;
 }
 
 .__footer_top {
-  border: 3px solid rgba(255, 255, 255, 0.2);
+  /* @apply border-[3px] border-white/30 lg:border-white/20; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
     inset 0px 0px 40px rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(60px);

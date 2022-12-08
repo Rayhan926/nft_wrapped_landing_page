@@ -1,3 +1,4 @@
+import HeaderMobile from "@components/HeaderMobile";
 import SiteLogo from "@components/SiteLogo";
 import SocialIcons from "@components/SocialIcons";
 import { navLinks } from "@config/constants";
@@ -6,11 +7,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="px-[50px] pt-[38px] absolute top-0 left-0 w-full z-[9999]">
-      <div className="flex justify-between items-center">
-        <SiteLogo />
+    <header className="px-5 pt-[30px] lg:px-[50px] lg:pt-[38px] absolute top-0 left-0 w-full z-[9999]">
+      <div className="flex justify-between lg:grid lg:grid-cols-3 items-center">
+        <div className="max-w-[190px] lg:max-w-[290px]">
+          <SiteLogo />
+        </div>
 
-        <nav className="flex items-center gap-11">
+        <nav className="items-center gap-11 hidden lg:flex lg:justify-center">
           {navLinks.map(({ text, url }, i) => (
             <Link
               key={i}
@@ -22,7 +25,7 @@ const Header = () => {
           ))}
         </nav>
 
-        <div className="flex gap-7">
+        <div className="gap-7 hidden lg:flex lg:justify-center">
           <SocialIcons />
 
           {/** Connect Wallet Button --Start-- */}
@@ -31,6 +34,8 @@ const Header = () => {
           </button>
           {/** Connect Wallet Button --End-- */}
         </div>
+
+        <HeaderMobile />
       </div>
     </header>
   );

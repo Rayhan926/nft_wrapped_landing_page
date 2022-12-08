@@ -7,10 +7,10 @@ import LeaderboardAccessSection from "./components/LeaderboardAccessSection";
 const Home = () => {
   return (
     <>
-      {/* <HeroSction /> */}
+      <HeroSction />
       <CardsSection />
-      {/* <LeaderboardAccessSection />
-      <Footer /> */}
+      <LeaderboardAccessSection />
+      <Footer />
     </>
   );
 };
